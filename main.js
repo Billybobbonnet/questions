@@ -13,6 +13,10 @@ $(document).ready(function() {
   var $form = $('.form')
   $form.form('reset')
   toastr.options.closeButton = true;
+  $('.inline.fields').on ('click', function(event){
+    event.currentTarget.style.borderLeft = "5px gray solid"
+    event.currentTarget.style.paddingLeft = "5px"
+  },)
   $('.ui.submit.button').on('click', function(event) {
     var values = $form.form('get values')
     var keys = Object.keys(values)
