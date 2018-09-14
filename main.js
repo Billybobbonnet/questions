@@ -17,22 +17,17 @@ $(document).ready(function() {
     var values = $form.form('get values')
     var keys = Object.keys(values)
     // if we miss a value
-    if (keys.length < 26) {
+    if (keys.length < 27) {
       var missingKey = 1
       // check which one
-      for (var i = 1; i < keys.length + 1; i++) {
-        if (!(keys[i - 1] in values)) {
-          console.log(i + " is undefined");
-          //  and scroll + animate the related input
+      for (var i = 1; i < 27; i++) {
+        if (+keys[i-1]!==i) {
           missingKey = i
           break
         }
       }
-      if (missingKey === 1 && keys.length > 1) {
-        missingKey = keys.length - 1
-      }
       $('html, body').animate({
-        scrollTop: $("label[for=" + missingKey + "]").offset().top + 20
+        scrollTop: $("label[for=" + missingKey + "]").offset().top - 50
       }, 1000);
       window.setTimeout(function() {
         $("label[for=" + missingKey + "]").transition('shake')
