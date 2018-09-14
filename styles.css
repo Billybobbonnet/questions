@@ -17,7 +17,9 @@ footer {
   font-size: 1.5rem;
 }
 /* Mobile */
-
+.credits {
+  float: right;
+}
 @media only screen and (max-width: 767px) {
   .ui.container {
     width: auto !important;
