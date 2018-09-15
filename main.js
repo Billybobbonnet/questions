@@ -11,12 +11,14 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 $(document).ready(function() {
   $('.ui.radio.checkbox').checkbox()
   var $form = $('.form')
-  $form.form('reset')
+  $form.form('clear')
   toastr.options.closeButton = true;
-  $('.inline.fields').on ('click', function(event){
-    event.currentTarget.style.borderLeft = "5px gray solid"
-    event.currentTarget.style.paddingLeft = "5px"
-  },)
+  $('.inline.fields').on('click', function(event) {
+    if (event.currentTarget.children[0].htmlFor in $form.form('get values')) {
+      event.currentTarget.style.borderLeft = "5px gray solid"
+      event.currentTarget.style.paddingLeft = "5px"
+    }
+  })
   $('.ui.submit.button').on('click', function(event) {
     var values = $form.form('get values')
     var keys = Object.keys(values)
@@ -25,7 +27,7 @@ $(document).ready(function() {
       var missingKey = 1
       // check which one
       for (var i = 1; i < 27; i++) {
-        if (+keys[i-1]!==i) {
+        if (+keys[i - 1] !== i) {
           missingKey = i
           break
         }

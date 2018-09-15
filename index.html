@@ -13,6 +13,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
   <link rel="stylesheet" href="./styles.css" />
   <script src="./main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89956822-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-89956822-7');
+</script>
+
 </head>
 <!--
 Copyright 2018 Antoine Cordelois
@@ -28,7 +38,9 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
     <div class="ui segments">
       <div class="ui segment">
-        <img src="./logo.png" alt="" />
+        <a href="http://espe.univ-toulouse.fr" target="_blank">
+          <img src="./logo.png" alt="logo_espe" />
+        </a>
         <div class="credits">
           Réalisé par <a href="mailto:julien.cordelois@univ-tlse2.fr">Julien Cordelois</a> et <a href="mailto:lucie.vacaresse@univ-tlse2.fr">Lucie Vacaresse</a>
         </div>
@@ -800,7 +812,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
           <!--question -->
           <div class="inline fields">
-            <label for="22">22. Une gestion de class efficace
+            <label for="22">22. Une gestion de classe efficace
                                                   passe par l’établissement et le
                                                   maintien du contrôle de la classe à
                                                   l’aide d’un code de vie élaboré par
@@ -1011,10 +1023,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
           <!-- /question -->
         </div><br>
         <div class="ui grid centered">
-          <button class="ui right labeled icon submit button">
+          <button class="big positive ui right labeled icon submit button">
               <i class="right arrow icon"></i>
               Obtenir mes résultats
             </button>
+            <br>
         </div>
 
 
