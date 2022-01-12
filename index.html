@@ -1,30 +1,37 @@
-
 <html>
+  <head>
+    <title>QUESTIONNAIRE: MON PROFIL DE GESTION DE CLASSE</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-89956822-7"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-<head>
-
-  <title>QUESTIONNAIRE: MON PROFIL DE GESTION DE CLASSE</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./main.js"></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-89956822-7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-89956822-7');
-</script>
-
-</head>
-<!--
+      gtag("config", "UA-89956822-7")
+    </script>
+  </head>
+  <!--
 Copyright 2018 Antoine Cordelois
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -33,1011 +40,1834 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 -->
-<body>
-  <div class="ui container">
-
-    <div class="ui segments">
-      <div class="ui segment">
-        <a href="http://espe.univ-toulouse.fr" target="_blank">
-          <img src="./logo.png" alt="logo_espe" />
-        </a>
-        <div class="credits">
-          Réalisé par <a href="mailto:julien.cordelois@univ-tlse2.fr">Julien Cordelois</a> et <a href="mailto:lucie.vacaresse@univ-tlse2.fr">Lucie Vacaresse</a>
+  <body>
+    <div class="ui container">
+      <div class="ui segments">
+        <div class="ui segment">
+          <a href="http://inspe.univ-toulouse.fr" target="_blank">
+            <img src="./logo.jpg" alt="logo_espe" />
+          </a>
+          <div class="credits">
+            Réalisé par
+            <a href="mailto:julien.cordelois@univ-tlse2.fr">Julien Cordelois</a
+            >.
+          </div>
         </div>
-      </div>
 
-      <div class="ui segment">
-        <h4 class="ui center aligned sub header">
-  MON PROFIL DE GESTION DE CLASSE
-</h4>
-        <h3 class="ui center aligned header">QUESTIONNAIRE</h3>
+        <div class="ui segment">
+          <h4 class="ui center aligned sub header">
+            MON PROFIL DE GESTION DE CLASSE
+          </h4>
+          <h3 class="ui center aligned header">QUESTIONNAIRE</h3>
 
+          <div class="ui message">
+            <p>
+              Ce questionnaire vous est proposé pour favoriser la prise de
+              conscience et la réflexion personnelle et pour susciter les
+              discussions entre collègues. (Chouinard, 2006).
+            </p>
+            <p>
+              Indiquez votre degré d’accord à chacun des énoncés en
+              sélectionnant le chiffre correspondant le mieux à ce que vous
+              pensez (1 pas d'accord, 5 complètement d'accord).
+            </p>
+          </div>
 
-<div class="ui message">
-  <p>
-    Ce questionnaire vous est proposé pour favoriser la prise de conscience et la réflexion personnelle et pour susciter les discussions entre collègues. (Chouinard, 2006).
-  </p>
-  <p>
-    Indiquez votre degré d’accord à chacun des énoncés en sélectionnant le chiffre correspondant le mieux à ce que vous pensez (1 pas d'accord, 5 complètement d'accord).
-  </p>
-</div>
+          <div class="ui form">
+            <hr />
+            <!--question -->
+            <div class="inline fields">
+              <label for="1"
+                >1. Un des principaux rôles de l’enseignant ou de l’enseignante
+                est de maintenir l’ordre et la discipline dans sa classe, et ce,
+                en contrôlant personnellement le comportement de ses
+                élèves.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="1"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="1"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="1"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="1"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="1"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <!-- /question -->
 
-        <div class="ui form">
-          <hr>
-          <!--question -->
-          <div class="inline fields">
-            <label for="1">1. Un des principaux rôles de
-              l’enseignant ou de l’enseignante est
-              de maintenir l’ordre et la discipline
-              dans sa classe, et ce, en contrôlant
-              personnellement le comportement
-              de ses élèves.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="1"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="2"
+                >2. Récompenser les élèves méritants ou leur donner du
+                renforcement est une excellente façon de gérer sa classe.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="2"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="2"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="2"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="2"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="2"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="1" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="1" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="1" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="1" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="2">2. Récompenser les élèves méritants
-                ou leur donner du renforcement est
-                une excellente façon de gérer sa
-                classe.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="2"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="3"
+                >3. En gestion de classe, la tâche principale de l’enseignant(e)
+                consiste à aider les élèves à comprendre et à respecter les
+                règles choisies par le groupe.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="3"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="3"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="3"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="3"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="3"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="2" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="2" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="2" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="2" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="3">3. En gestion de classe, la tâche
-                  principale de l’enseignant(e)
-                  consiste à aider les élèves à
-                  comprendre et à respecter les règles
-                  choisies par le groupe.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="3"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="4"
+                >4. L’utilisation d’activités d’apprentissage appropriées
+                encourage habituellement les élèves à bien se comporter parce
+                que cela diminue l’ennui et la frustration.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="4"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="4"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="4"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="4"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="4"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="3" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="3" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="3" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="3" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="4">4. L’utilisation d’activités
-                    d’apprentissage appropriées
-                    encourage habituellement les
-                    élèves à bien se comporter parce
-                    que cela diminue l’ennui et la
-                    frustration.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="4"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="5"
+                >5. La menace de la punition et la punition peuvent être très
+                efficaces lorsqu’elles sont bien utilisées.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="5"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="5"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="5"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="5"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="5"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="4" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
+            <hr />
+            <!-- /question -->
+            <!--question -->
+            <div class="inline fields">
+              <label for="6"
+                >6. En ce qui concerne le comportement des élèves, il est
+                préférable de leur imposer le moins de limites possible afin de
+                leur permettre de développer tout leur potentiel et leur
+                autonomie.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="6"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="6"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="6"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="6"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="6"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="4" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
+            <hr />
+            <!-- /question -->
+            <!--question -->
+            <div class="inline fields">
+              <label for="7"
+                >7. En ce qui concerne la gestion de classe, l’action la plus
+                importante de l’enseignant ou de l’enseignante consiste à faire
+                en sorte d’avoir de bonnes relations avec ses élèves.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="7"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="7"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="7"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="7"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="7"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="4" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
+            <hr />
+            <!-- /question -->
+            <!--question -->
+            <div class="inline fields">
+              <label for="8"
+                >8. Une gestion de classe efficace passe avant tout par
+                l’instauration dans la classe d’un système de règles déterminées
+                par l’enseignant ou l’enseignante.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="8"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="8"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="8"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="8"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="8"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="4" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="5">5. La menace de la punition et la
-                      punition peuvent être très efficaces
-                      lorsqu’elles sont bien utilisées.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="5"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="9"
+                >9. Une bonne gestion de classe consiste principalement à
+                renforcer les comportements appropriés et à décourager les
+                comportements déviants.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="9"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="9"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="9"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="9"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="9"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="5" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="5" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="5" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="5" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
-          <!--question -->
-          <div class="inline fields">
-            <label for="6">6. En ce qui concerne le
-                        comportement des élèves, il est
-                        préférable de leur imposer le moins
-                        de limites possible afin de leur
-                        permettre de développer tout leur
-                        potentiel et leur autonomie.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="6"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="6" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="6" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="6" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="6" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
-          <!--question -->
-          <div class="inline fields">
-            <label for="7">7. En ce qui concerne la gestion de
-                          classe, l’action la plus importante
-                          de l’enseignant ou de l’enseignante
-                          consiste à faire en sorte d’avoir de
-                          bonnes relations avec ses élèves.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="7"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="7" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="7" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="7" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="7" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
-          <!--question -->
-          <div class="inline fields">
-            <label for="8">8. Une gestion de classe efficace passe
-                            avant tout par l’instauration dans la
-                            classe d’un système de règles
-                            déterminées par l’enseignant ou
-                            l’enseignante.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="8"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="8" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="8" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="8" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="8" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="9">9. Une bonne gestion de classe
-                              consiste principalement à renforcer
-                              les comportements appropriés et à
-                              décourager les comportements
-                              déviants.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="9"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="10"
+                >10. L’utilisation du conseil de coopération et de sessions
+                collectives de résolution de problèmes sont parmi les moyens les
+                plus efficaces pour régler les problèmes de gestion de
+                classe.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="10"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="10"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="10"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="10"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="10"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="9" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="9" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="9" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="9" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="10">10. L’utilisation du conseil de
-                                coopération et de sessions
-                                collectives de résolution de
-                                problèmes sont parmi les moyens
-                                les plus efficaces pour régler les
-                                problèmes de gestion de classe.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="10"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="11"
+                >11. L’utilisation de stratégies pédagogiques efficaces
+                contribue grandement à prévenir et à régler les problèmes de
+                comportement.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="11"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="11"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="11"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="11"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="11"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="10" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="10" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="10" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="10" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="11">11. L’utilisation de stratégies
-                                  pédagogiques efficaces contribue
-                                  grandement à prévenir et à régler
-                                  les problèmes de comportement.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="11"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="12"
+                >12. On peut utiliser le sarcasme en classe mais avec précaution
+                et seulement après que de solides relations auront été établies
+                avec les élèves.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="12"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="12"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="12"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="12"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="12"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="11" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="11" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="11" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="11" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="12">12. On peut utiliser le sarcasme en
-                                    classe mais avec précaution et
-                                    seulement après que de solides
-                                    relations auront été établies avec les
-                                    élèves.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="12"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="13"
+                >13. Trop de contrôle peut entraver le développement naturel de
+                l’autonomie des élèves. </label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="13"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="13"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="13"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="13"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="13"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="12" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="12" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="12" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="12" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="13">13. Trop de contrôle peut entraver le
-                                      développement naturel de
-                                      l’autonomie des élèves.
-                                    </label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="13"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="14"
+                >14. En ce qui concerne la gestion de classe, le rôle le plus
+                important de l’enseignant ou de l’enseignante consiste à établir
+                et à maintenir de bonnes relations avec ses élèves.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="14"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="14"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="14"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="14"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="14"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="13" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="13" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="13" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="13" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="14">14. En ce qui concerne la gestion de
-                                      classe, le rôle le plus important de
-                                      l’enseignant ou de l’enseignante
-                                      consiste à établir et à maintenir de
-                                      bonnes relations avec ses élèves.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="14"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="15"
+                >15. C’est le rôle de l’enseignant ou de l’enseignante de
+                choisir personnellement des règles de vie pour sa classe.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="15"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="15"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="15"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="15"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="15"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="14" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="14" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="14" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="14" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="15">15. C’est le rôle de l’enseignant ou de
-                                        l’enseignante de choisir
-                                        personnellement des règles de vie
-                                        pour sa classe.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="15"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="16"
+                >16. Un bon système d’émulation appliqué à tout le groupe peut
+                vraiment faciliter la gestion de classe. </label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="16"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="16"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="16"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="16"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="16"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="15" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="15" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="15" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="15" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="16">16. Un bon système d’émulation
-                                          appliqué à tout le groupe peut
-                                          vraiment faciliter la gestion de
-                                          classe.
-                                        </label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="16"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="17"
+                >17. Une bonne gestion de classe passe avant tout par la
+                cohésion du groupe et la coopération entre les élèves. </label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="17"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="17"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="17"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="17"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="17"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="16" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="16" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="16" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="16" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="17">17. Une bonne gestion de classe passe avant tout par la cohésion du
-                                          groupe et la coopération entre les
-                                          élèves.
-                                        </label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="17"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="18"
+                >18. Faire en sorte que chaque élève fasse des apprentissages
+                significatifs est une excellente façon d’instaurer et de
+                maintenir la discipline en classe.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="18"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="18"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="18"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="18"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="18"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="17" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="17" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="17" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="17" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="18">18. Faire en sorte que chaque élève
-                                          fasse des apprentissages
-                                          significatifs est une excellente façon
-                                          d’instaurer et de maintenir la
-                                          discipline en classe.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="18"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="19"
+                >19. Une gestion de classe efficace passe parfois par le recours
+                à la coercition.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="19"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="19"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="19"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="19"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="19"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="18" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="18" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="18" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="18" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="19">19. Une gestion de classe efficace
-                                            passe parfois par le recours à la
-                                            coercition.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="19"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="20"
+                >20. En gestion de classe, il est préférable d’être un peu trop
+                permissif qu’un peu trop « contrôlant ».</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="20"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="20"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="20"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="20"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="20"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="19" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="19" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="19" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="19" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="20">20. En gestion de classe, il est
-                                              préférable d’être un peu trop
-                                              permissif qu’un peu trop «
-                                              contrôlant ».</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="20"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="21"
+                >21. La qualité de la gestion de classe se mesure avant tout par
+                la nature des relations entre les élèves et l’enseignant ou
+                l’enseignante.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="21"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="21"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="21"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="21"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="21"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="20" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="20" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="20" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="20" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="21">21. La qualité de la gestion de classe
-                                                se mesure avant tout par la nature
-                                                des relations entre les élèves et
-                                                l’enseignant ou l’enseignante.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="21"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="22"
+                >22. Une gestion de classe efficace passe par l’établissement et
+                le maintien du contrôle de la classe à l’aide d’un code de vie
+                élaboré par l’enseignant ou l’enseignante.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="22"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="22"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="22"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="22"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="22"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="21" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="21" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="21" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="21" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="22">22. Une gestion de classe efficace
-                                                  passe par l’établissement et le
-                                                  maintien du contrôle de la classe à
-                                                  l’aide d’un code de vie élaboré par
-                                                  l’enseignant ou l’enseignante.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="22"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="23"
+                >23. En gestion de classe, il est primordial de savoir
+                récompenser et appliquer des conséquences.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="23"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="23"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="23"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="23"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="23"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="22" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="22" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="22" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="22" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="23">23. En gestion de classe, il est
-                                                    primordial de savoir récompenser
-                                                    et appliquer des conséquences.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="23"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="24"
+                >24. Une gestion de classe efficace a pour but principal d’aider
+                le groupe à devenir capable de régler lui-même plusieurs de ses
+                problèmes.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="24"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="24"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="24"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="24"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="24"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="23" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="23" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="23" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="23" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="24">24. Une gestion de classe efficace a
-                                                      pour but principal d’aider le
-                                                      groupe à devenir capable de régler
-                                                      lui-même plusieurs de ses
-                                                      problèmes.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="24"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="25"
+                >25. Les activités d’apprentissage que choisit l’enseignant ou
+                l’enseignante ont une répercussion importante sur le
+                comportement des élèves.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="25"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="25"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="25"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="25"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="25"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="24" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="24" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="24" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="24" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="25">25. Les activités d’apprentissage que
-                                                        choisit l’enseignant ou
-                                                        l’enseignante ont une répercussion
-                                                        importante sur le comportement
-                                                        des élèves.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="25"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="26"
+                >26. L’utilisation du sarcasme peut, à certaines conditions bien
+                précises, constituer un moyen acceptable de contrôler le
+                comportement de certains élèves.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="26"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="26"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="26"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="26"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="26"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="25" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="25" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="25" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="25" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
+            <hr />
+            <!-- /question -->
 
-          <!--question -->
-          <div class="inline fields">
-            <label for="26">26. L’utilisation du sarcasme peut, à
-                                                          certaines conditions bien précises,
-                                                          constituer un moyen acceptable de
-                                                          contrôler le comportement de
-                                                          certains élèves.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="26"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
+            <!--question -->
+            <div class="inline fields">
+              <label for="27"
+                >27. Une gestion de classe efficace passe parfois par la
+                punition sévère des comportements inadéquats.</label
+              ><br />
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="27"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="1"
+                  /><label>1</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="27"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="2"
+                  /><label>2</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="27"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="3"
+                  /><label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="27"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="4"
+                  /><label>4</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input
+                    name="27"
+                    tabindex="0"
+                    class="hidden"
+                    type="radio"
+                    value="5"
+                  /><label>5</label>
+                </div>
               </div>
             </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="26" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="26" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="26" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="26" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
+            <hr />
+            <!-- /question -->
           </div>
-          <hr>
-          <!-- /question -->
-
-          <!--question -->
-          <div class="inline fields">
-            <label for="27">27. Une gestion de classe efficace
-                                                            passe parfois par la punition sévère
-                                                            des comportements inadéquats.</label><br>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="27"  tabindex="0" class="hidden" type="radio" value="1"><label>1</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="27" tabindex="0" class="hidden" type="radio" value="2"><label>2</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="27" tabindex="0" class="hidden" type="radio" value="3"><label>3</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="27" tabindex="0" class="hidden" type="radio" value="4"><label>4</label>
-              </div>
-            </div>
-            <div class="field">
-              <div class="ui radio checkbox">
-                <input name="27" tabindex="0" class="hidden" type="radio" value="5"><label>5</label>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- /question -->
-        </div><br>
-        <div class="ui grid centered">
-          <button class="big positive ui right labeled icon submit button">
+          <br />
+          <div class="ui grid centered">
+            <button class="big positive ui right labeled icon submit button">
               <i class="right arrow icon"></i>
               Obtenir mes résultats
             </button>
-            <br>
+            <br />
+          </div>
         </div>
-
-
       </div>
     </div>
-
-  </div>
-  <footer>
-    <small  class="centered">© 2018 Copyright Cordelois - MIT licence - Basé sur une étude de Chouinard, 2006 - <a class="grey-text text-lighten-4 right" href="https://github.com/billybobbonnet/questions">Code source</a></small>
-  </footer>
-</body>
-
+    <footer>
+      <small class="centered"
+        >© 2018 Copyright Cordelois - MIT licence - Basé sur une étude de
+        Chouinard, 2006 -
+        <a
+          class="grey-text text-lighten-4 right"
+          href="https://github.com/billybobbonnet/questions"
+          >Code source</a
+        ></small
+      >
+    </footer>
+  </body>
 </html>
